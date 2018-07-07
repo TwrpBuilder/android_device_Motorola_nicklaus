@@ -36,7 +36,7 @@ script:
     EOF
 after_success:
   - export version=$(cat bootable/recovery/variables.h | grep "define TW_MAIN_VERSION_STR" | cut -d '"' -f2)
-  - cp $HOME/twrp/out/target/product/nicklaus/recovery.img $HOME/twrp/TWRP-$version-Moto E4 Plus-$(date +"%Y%m%d").img
+  - cp $HOME/twrp/out/target/product/nicklaus/recovery.img $HOME/twrp/TWRP-$version-Moto_E4_Plus_nicklaus-$(date +"%Y%m%d").img
 
 deploy:
   skip_cleanup: true
